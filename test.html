@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+<meta name="description"
+	content="Liquid Slider : The Last Responsive Content Slider You'll Ever Need" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Optionally use Animate.css -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css">
+<link rel="stylesheet" href="./css/liquid-slider.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto'
+	rel='stylesheet' type='text/css'>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<title>Annam</title>
+</head>
+<body>
+
+	<div class="container-fluid">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" rel="home" href="#"
+					title="Annam"> <img
+					style="max-width: 100px; max-height: 40px; margin-top: -7px;"
+					src="../liquidslider-master/logo-website.png">
+				</a>
+			</div>
+			<div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="feature.html">Features</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="main-slider" class="liquid-slider">
+    <div class="slider-container">
+     <div class="row">
+     <div class="container-fluid">
+						<div class="col-xs-6">
+							<img src="../liquidslider-master/Homepageimage-annam-busiess.png"
+								alt="Mountain View" style="width: 550px; height: 450px;">
+						</div>
+
+						<div class="col-xs-6">
+							<div class="container-fluid">
+								<div class="row-fluid">
+									<div class="description-text">
+
+
+										<font><b>Do you want to get noticed<br>&nbsp;
+												&nbsp; &nbsp; for your professional services?
+										</b></font><br>
+										<br> <font color="red">Register with us.<br>Expand
+											your business.
+										</font><br>
+										<br> <font><b>Hurry up! Create your presensce<br>
+												& get noticed.Discover your world!
+										</b></font><br>
+										<br>
+										<div class="vertical-divider">
+											<div class="column one-third">
+												<img src="../liquidslider-master/qr_business.png"
+													alt="Mountain View" style="width: 80px; height: 80px;">
+											</div>
+											<div class="column two-thirds">
+												<a
+													href="https://play.google.com/store/apps/details?id=annamprovider.mobile.laniam.com.annamforbusiness">
+													<img class="playstore-image" alt="Get it on Google Play"
+													src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+												</a>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+						</div>
+					</div>
+    </div>
+    <div class="slider-container">
+          <div class="row">
+          <div class="col-xs-6">
+							<div class="container-fluid">
+								<div class="row-fluid">
+									<div class="description-text">
+										<font><b>Bored of your routine food?<br>&nbsp;
+												&nbsp; &nbsp;Looking for something new?
+										</b></font><br>
+										<br> <font color="red">Connect to us.<br>Find
+											the food you are fond of!
+										</font><br>
+										<br> <font><b>Explore more on your daily food
+												needs.</b></font><br>
+										<br>
+										<div class="vertical-divider">
+											<div class="column one-third">
+												<img src="../liquidslider-master/qr_annam.png"
+													alt="Mountain View" style="width: 80px; height: 80px;">
+											</div>
+											<div class="column two-thirds">
+												<a
+													href="https://play.google.com/store/apps/details?id=annamprovider.mobile.laniam.com.annamforbusiness">
+													<img class="playstore-image" alt="Get it on Google Play"
+													src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+						<div class="col-xs-6">
+							<img src="../liquidslider-master/Homepageimage-annam-busiess.png"
+								alt="Mountain View" style="width: 550px; height: 450px;">
+						</div>
+
+						
+					</div>
+    </div>          
+  </div>
+<footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+  <script src="./js/jquery.liquid-slider.min.js"></script>  
+  <script>
+    /**
+     * If you need to access the internal property or methods, use this:
+     * var api = $.data( $('#main-slider')[0], 'liquidSlider');
+     * console.log(api);
+     */
+   
+  </script>
+  <script type="text/javascript">
+    var viewportHeight = $(window).height();
+    var navHeight = $('nav').height();
+
+    $('.slider-container').css('height', viewportHeight-navHeight + 'px');
+
+    $(window).resize(function() {
+        var viewportHeight = $(window).height();
+        var navHeight = $('nav').height();
+        $('.slider-container').css('height', viewportHeight-navHeight + 'px');
+    });
+    
+    $('#main-slider').liquidSlider();
+    </script>
+</footer>
+	
+</body>
+</html>

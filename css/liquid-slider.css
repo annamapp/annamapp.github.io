@@ -1,0 +1,87 @@
+html,
+body {
+    height: 100%;
+}
+
+.slider-container{
+	padding-right:20px;
+	padding-left:20px;
+}
+.description-text{
+	padding-top:20px;
+	font-family: 'Roboto', sans-serif;
+       font-size: 28px;
+}
+.description-slider-text{
+padding-top:20px;
+	font-family: 'Roboto', sans-serif;
+}
+.vertical-divider{
+	clear: both;
+	position: relative;
+}
+.headingfive{
+color:red !important;
+font-family:'Roboto Mono';
+}
+.vertical-divider:after {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.vertical-divider .column:not(:first-child):after, .vertical-divider .columns:not(:first-child):after{
+	background: #DDDDDD;
+	bottom: 0;
+	content: " ";
+	margin-left: -10px;
+	position: absolute;
+	top: 0;
+	width: 1px;
+}
+
+/* Very simple grid for example */
+.linkDiv { position: relative; width: 960px; margin: 20px auto; padding: 0; margin-left:300dp }
+.vertical-divider{
+}
+.column, .columns { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+
+.one-third.column { width: 100dp; }
+
+.two-thirds.column { 
+	width: 100dp; }
+	
+.playstore-image{
+	padding-top:18px !important;
+}
+
+.navbar-custom {
+    background-color:#222222;
+    color:#06070C;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+.navbar-custom .navbar-nav > .active > a {
+    color: #ffffff;
+    background-color:#06070C;
+}
+ .navbar-custom .navbar-nav>li:hover{
+    color: #333;
+    background-color:#06070C !important;
+}
+.navbar-custom .navbar-nav>li:focus{
+    color: #333;
+    background-color:#06070C !important;
+}
+.navbar-custom .navbar-nav > li > a:hover, .dropdown-menu > li > a:focus {
+            background-color:transparent !important;
+        }
+
+.navbar-custom .navbar-brand {
+    color:#06070C;
+}

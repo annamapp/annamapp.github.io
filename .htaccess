@@ -1,0 +1,7 @@
+RewriteEngine On
+
+<IfModule pagespeed_module>
+   ModPagespeed on   
+   # using commands,fileters etc
+   ModPagespeedDisableFilters remove_comments
+</IfModule>
