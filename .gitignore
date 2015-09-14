@@ -3,6 +3,3 @@ node_modules
 src/vendor
 src/index.html
 .bowerrc
-.idea
-.settings
-build

@@ -2,28 +2,32 @@ html,
 body {
     height: 100%;
 }
-
+@media (max-width: 480px) { 
+.normal{
+	font-size:18px;
+}
+.quote{
+	font-size:16px;
+	font-family: 'Roboto Mono';
+}
+.map{
+	width:100%;
+	height:350px;
+}	
+}
 .slider-container{
 	padding-right:20px;
 	padding-left:20px;
 }
 .description-text{
-	padding-top:20px;
 	font-family: 'Roboto', sans-serif;
        font-size: 28px;
-}
-.description-slider-text{
-padding-top:20px;
-	font-family: 'Roboto', sans-serif;
 }
 .vertical-divider{
 	clear: both;
 	position: relative;
 }
-.headingfive{
-color:red !important;
-font-family:'Roboto Mono';
-}
+
 .vertical-divider:after {
 	clear: both;
 	content: " ";
@@ -56,32 +60,32 @@ font-family:'Roboto Mono';
 .playstore-image{
 	padding-top:18px !important;
 }
-
-.navbar-custom {
-    background-color:#222222;
-    color:#06070C;
-    border-radius:0;
+.navbar-inverse{
+	background-color:black !important;
 }
-
-.navbar-custom .navbar-nav > li > a {
-    color:#fff;
-}
-.navbar-custom .navbar-nav > .active > a {
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
     color: #ffffff;
-    background-color:#06070C;
+    background-color: #5D6267;
 }
- .navbar-custom .navbar-nav>li:hover{
-    color: #333;
-    background-color:#06070C !important;
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
 }
-.navbar-custom .navbar-nav>li:focus{
-    color: #333;
-    background-color:#06070C !important;
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #5D6267;
 }
-.navbar-custom .navbar-nav > li > a:hover, .dropdown-menu > li > a:focus {
-            background-color:transparent !important;
-        }
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: white;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus ,.nav-tabs>li.active>a:hover {
+    border: none;
+    -webkit-box-shadow: inset 0 -2px 0 #2196f3;
+    box-shadow: inset 0 -2px 0 #000000;
+    color: #000000;
+}
 
-.navbar-custom .navbar-brand {
-    color:#06070C;
+.nav-tabs>li>a:hover, .nav-tabs>li>a:focus {
+    border: none;
+    -webkit-box-shadow: inset 0 -2px 0 #2196f3;
+    box-shadow: inset 0 -2px 0 #000000;
+    color: #000000;
 }
