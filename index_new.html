@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Full Slider - Start Bootstrap Template</title>
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha256-hMIwZV8FylgKjXnmRI2YY0HLnozYr7Cuo1JvRtzmPWs= sha512-k+wW4K+gHODPy/0gaAMUNmCItIunOZ+PeLW7iZwkDZH/wMaTrSJTt7zK6TGy6p+rnDBghAxdvu1LX2Ohg0ypDw=="
+	crossorigin="anonymous">
+
+<link href='https://fonts.googleapis.com/css?family=Roboto'
+	rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Mono'
+	rel='stylesheet' type='text/css'>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- Bootstrap Core CSS -->
+
+<!-- Custom CSS -->
+<link href="css/full-slider.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+<style>
+.navbar-inverse {
+	background-color: #F07735 !important;
+}
+
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>.active>a:focus
+	{
+	color: #ffffff;
+	background-color: #eca884;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #ffffff;
+}
+
+.navbar-inverse .navbar-collapse,.navbar-inverse .navbar-form {
+	border-color: #eca884;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: white;
+}
+
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover
+	{
+	border: none;
+	-webkit-box-shadow: inset 0 -2px 0 #2196f3;
+	box-shadow: inset 0 -2px 0 #000000;
+	color: #000000;
+}
+
+.nav-tabs>li>a:hover,.nav-tabs>li>a:focus {
+	border: none;
+	-webkit-box-shadow: inset 0 -2px 0 #2196f3;
+	box-shadow: inset 0 -2px 0 #000000;
+	color: #000000;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.fill {
+	width: 100%;
+	height: 90%;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+.carousel {
+	height:100%
+}
+
+
+
+
+/*newly added*/
+
+
+y screen and (max-width : 320px) {
+.carousel {
+		height: 41%;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+.carousel {
+		height: 41%;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+.carousel {
+		height: 41%;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+.carousel {
+		height: 41%;
+	}
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+.carousel {
+		height: 83%;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+.carousel {
+		height: 49%;
+	}
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+.carousel {
+		height: 100%;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+.carousel {
+		height: 100%;
+	}
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+.carousel {
+		height: 100%;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+.carousel {
+		height: 50%;
+	}
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+.carousel {
+		height: 100%;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+.carousel {
+		height: 50%;
+	}
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+.carousel {
+		height: 110%;
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+.carousel {
+		height: 44%;
+	}
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+.carousel {
+		height: 110%;
+	}
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+.carousel {
+		height: 44%;
+	}
+}
+
+/* Samsung Galaxy S3 ----------- 
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+.carousel {
+		height: 100%;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+.carousel {
+		height: 50%;
+	}
+}*/
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+.carousel {
+		height: 100%;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+.carousel {
+		height: 50%;
+	}
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+.carousel {
+		height: 100%;
+	}
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+.carousel {
+		height: 50%;
+	}
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" rel="home" href="index.html" title="Annam">
+					<img style="max-width: 100px; max-height: 40px; margin-top: -7px;"
+					src="../liquidslider-master/logo-website.png">
+				</a>
+			</div>
+
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-2">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="annam.html">Annam</a></li>
+					<li><a href="annam-business.html">Annam Business</a></li>
+					<li><a href="feedback.php">Feedback</a>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="fa fa-phone-square fa-lg"></span>
+							+91 9004452418</a></li>
+					<li><a href="https://www.facebook.com/hotiffin"><span
+							class="fa fa-facebook-square fa-lg"></span></a></li>
+					<li><a href="https://twitter.com/hotiffin"><span
+							class="fa fa-twitter-square fa-lg"></span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+
+	<!-- Full Page Image Background Carousel Header -->
+	<header id="myCarousel" class="carousel slide">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+		</ol>
+
+		<!-- Wrapper for Slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<!-- Set the first background image using inline CSS below. -->
+				<div class="fill ">
+					<img src="t5.jpg" alt="Mountain View" class="img-responsive">
+				</div>
+			</div>
+			<div class="item">
+				<!-- Set the second background image using inline CSS below. -->
+				<div class="fill ">
+					<img src="t5.jpg" alt="Mountain View" class="img-responsive">
+				</div>
+			</div>
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="icon-prev"></span>
+		</a> <a class="right carousel-control" href="#myCarousel"
+			data-slide="next"> <span class="icon-next"></span>
+		</a>
+
+	</header>
+	
+	
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Full Slider by Start Bootstrap</h1>
+                <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the <code>full-slider.css</code>file.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+	<!-- Page Content -->
+	
+	<!-- /.container -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Script to Activate the Carousel -->
+	<script>
+		$('.carousel').carousel({
+			interval : 5000
+		//changes the speed
+		})
+	</script>
+
+</body>
+
+</html>

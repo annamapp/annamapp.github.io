@@ -40,6 +40,7 @@ if (!$errName && !$errEmail && !$errMessage) {
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css" rel="stylesheet" integrity="sha256-hMIwZV8FylgKjXnmRI2YY0HLnozYr7Cuo1JvRtzmPWs= sha512-k+wW4K+gHODPy/0gaAMUNmCItIunOZ+PeLW7iZwkDZH/wMaTrSJTt7zK6TGy6p+rnDBghAxdvu1LX2Ohg0ypDw==" crossorigin="anonymous">
 <link href='https://fonts.googleapis.com/css?family=Roboto'
 	rel='stylesheet' type='text/css'>
@@ -65,7 +66,7 @@ if (!$errName && !$errEmail && !$errMessage) {
       <a class="navbar-brand" rel="home" href="index.html"
 					title="Annam"> <img
 					style="max-width: 100px; max-height: 40px; margin-top: -7px;"
-					src="./logo-website.png">
+					src="../liquidslider-master/logo-website.png">
 				</a>
     </div>
 
