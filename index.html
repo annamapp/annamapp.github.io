@@ -1,15 +1,7 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title></title>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="">
-<meta name="author" content="">
-
-<title>Annam</title>
+<!-- jQuery library (served from Google) -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link
 	href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css"
 	rel="stylesheet"
@@ -22,19 +14,15 @@
 	rel='stylesheet' type='text/css'>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<!-- Bootstrap Core CSS -->
-
-<!-- Custom CSS -->
-<link href="js/ninja-slider.css" rel="stylesheet" type="text/css" />
-<script src="js/ninja-slider.js" type="text/javascript"></script>
-
+<link rel="stylesheet" href="./css/liquid-slider.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <style>
-.navbar-inverse {
-	background-color: #F07735 !important;
-}
-
 .footer {
 	bottom: 0;
+	position:relative;
 	width: 100%;
 	height: 60px;
 	background-color: #f5f5f5;
@@ -43,44 +31,47 @@
 .footer .container-fluid p {
 	margin: 20px 0;
 }
-
-.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>.active>a:focus
-	{
-	color: #ffffff;
-	background-color: #eca884;
+.container-fluid{
+min-height:calc(100%-124px);
 }
 
-.navbar-inverse .navbar-nav>li>a {
-	color: #ffffff;
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: calc(100%-64px); /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+/*add some makeup*/
+.carousel .carousel-control {
+    background: none;
+    border: none;
+    top: 30%;
+    font-size:100px;
 }
 
-.navbar-inverse .navbar-collapse,.navbar-inverse .navbar-form {
-	border-color: #eca884;
+/*full width container*/
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
 }
-
-.navbar-inverse .navbar-toggle .icon-bar {
-	background-color: white;
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left:15px;
+    padding-right:15px;
 }
-
-.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover
-	{
-	border: none;
-	-webkit-box-shadow: inset 0 -2px 0 #2196f3;
-	box-shadow: inset 0 -2px 0 #000000;
-	color: #000000;
-}
-
-.nav-tabs>li>a:hover,.nav-tabs>li>a:focus {
-	border: none;
-	-webkit-box-shadow: inset 0 -2px 0 #2196f3;
-	box-shadow: inset 0 -2px 0 #000000;
-	color: #000000;
-}
-
 .navbar {
-	margin-bottom: 0px;
+    position: relative;
+    min-height: 64px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
 }
 </style>
+
+<title>Annam</title>
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-static-top">
@@ -94,7 +85,7 @@
 				</button>
 				<a class="navbar-brand" rel="home" href="index.html" title="Annam">
 					<img style="max-width: 100px; max-height: 40px; margin-top: -7px;"
-					src="../liquidslider-master/logo-website.png">
+					src="logo-website.png">
 				</a>
 			</div>
 
@@ -109,24 +100,29 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#"><span class="fa fa-phone-square fa-lg"></span>
 							+91 9004452418</a></li>
-					<li><a href="https://www.facebook.com/hotiffin"><span
+					<li><a href="https://www.facebook.com/hotiffin" style="padding-top:25.5px"><span
 							class="fa fa-facebook-square fa-lg"></span></a></li>
-					<li><a href="https://twitter.com/hotiffin"><span
+					<li><a href="https://twitter.com/hotiffin" style="padding-top:25.5px"><span
 							class="fa fa-twitter-square fa-lg"></span></a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<div>
-		<!--start-->
-		<div id='ninja-slider'>
-			<ul>
-				<li><div data-image="t6.jpg"></div></li>
-				<li><div data-image="t8-ninja.jpg"></div></li>
-			</ul>
-		</div>
-		<!--end-->
-	</div>
+<header class="block">
+    <div id="myCarousel" class="carousel slide" data-interval="3000">
+        <div class="carousel-inner">
+            <div class="active item">
+                <img src="t6.jpg" alt="Slide1" />
+            </div>
+            <div class="item">
+                <img src="t8-ninja.jpg" alt="Slide2" />
+            </div>
+           
+        </div>
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+    </div>
+</header>
 	<br>
 	<div class="container-fluid">
 
@@ -134,7 +130,7 @@
 			<div class="col-lg-6 col-md-12 col-xs-12">
 				<div class="row" style="padding-bottom: 15px;">
 					<div class="col-lg-2 col-md-4 col-xs-4">
-						<a href="#" class="thumbnail"> <img
+						<a href="annam-business.html" class="thumbnail"> <img
 							src="annamlogo-provider.png" alt="...">
 						</a>
 					</div>
@@ -159,7 +155,7 @@
 			<div class="col-lg-6 col-md-12 col-xs-12">
 				<div class="row" style="padding-bottom: 15px;">
 					<div class="col-lg-2 col-md-4 col-xs-4">
-						<a href="#" class="thumbnail"> <img src="logo-annam.png"
+						<a href="annam.html" class="thumbnail"> <img src="logo-annam.png"
 							alt="...">
 						</a>
 					</div>
@@ -185,10 +181,10 @@
 	</div>
 	<br>
 	<footer class="footer">
+	
 		<div class="container-fluid">
 			<p class="text-center">@2015 hotiff.in - All Rights Reserved.</p>
 		</div>
 	</footer>
-
 </body>
 </html>

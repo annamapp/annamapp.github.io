@@ -19,14 +19,38 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script
 	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<!-- bxSlider Javascript file -->
-<script src="./js/jquery.bxslider.min.js"></script>
-<!-- bxSlider CSS file -->
-<link href="./lib/jquery.bxslider.css" rel="stylesheet" />
 <style>
-.bxslider .row{
-    margin-left: -35px;
-    margin-right: -35px;
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: calc(100%-64px); /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+/*add some makeup*/
+.carousel .carousel-control {
+    background: none;
+    border: none;
+    top: 50%;
+}
+/*full width container*/
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left:15px;
+    padding-right:15px;
+}
+.navbar {
+    position: relative;
+    min-height: 64px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
 }
 </style>
 <title></title>
@@ -43,7 +67,7 @@
 				</button>
 				<a class="navbar-brand" rel="home" href="index.html" title="Annam">
 					<img style="max-width: 100px; max-height: 40px; margin-top: -7px;"
-					src="../liquidslider-master/logo-website.png">
+					src="logo-website.png">
 				</a>
 			</div>
 
@@ -66,66 +90,82 @@
 			</div>
 		</div>
 	</nav>
+<header class="block">
+    <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="active item">
+                <img src="t6.jpg" alt="Slide1" />
+            </div>
+            <div class="item">
+                <img src="t8-ninja.jpg" alt="Slide2" />
+            </div>
+           
+        </div>
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+    </div>
+</header>
+	<br>
 	<div class="container-fluid">
 
-		<div id="bxslider" class="bxslider">
-			<div class="slider-container">
-				<div class="row">
-					<div class="col-xs-12 col-md-12 col-sm-12">
-						<img src="t4.jpg"
-							alt="Mountain View" class="img-responsive" >
-					</div></div>
+		<div class="row">
+			<div class="col-lg-6 col-md-12 col-xs-12">
+				<div class="row" style="padding-bottom: 15px;">
+					<div class="col-lg-2 col-md-4 col-xs-4">
+						<a href="annam-business.html" class="thumbnail"> <img
+							src="annamlogo-provider.png" alt="...">
+						</a>
+					</div>
+					<div class="col-lg-10 col-md-8 col-xs-8">
+						<p>Tiffin service provider community is growing now a days.
+							They are coming up with their specialized services in terms of
+							healthy food, specific couisine food and many more. Annan is
+							available for all of them. Annam is a place where tiffin
+							providers can create profile, publish daily menu notifications
+							and set the location.</p>
+					</div>
+					<div class="col-lg-12 col-md-12 col-xs-12 text-center">
+						<h4>Now available on your android device</h4>
+						<a
+							href="https://play.google.com/store/apps/details?id=annamprovider.mobile.laniam.com.annamforbusiness">
+							<img class="playstore-image" alt="Get it on Google Play"
+							src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+						</a>
+					</div>
+				</div>
 			</div>
-			<div class="slider-container">
-				<div class="row">
-					<div class="col-xs-12 col-md-5 col-sm-5 col-md-offset-1">
-						<div class="container-fluid">
-							<div class="row-fluid">
-								<div class="description-text">
-									<font class="normal"><b>Bored of your routine food?<br>&nbsp;
-											&nbsp; &nbsp;Looking for something new?
-									</b></font><br> <br> <font class="quote">Connect to us.<br>Find
-										the food you are fond of!
-									</font><br> <br> <font class="normal"><b>Explore
-											more on your daily food needs.</b></font><br> <br>
-									<div class="vertical-divider">
-										<div class="column one-third">
-											<img src="../annam-web/qr_annam.png" alt="Mountain View"
-												style="width: 80px; height: 80px;">
-										</div>
-										<div class="column two-thirds">
-											<a
-												href="https://play.google.com/store/apps/details?id=annamprovider.mobile.laniam.com.annamforbusiness">
-												<img class="playstore-image" alt="Get it on Google Play"
-												src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-
+			<div class="col-lg-6 col-md-12 col-xs-12">
+				<div class="row" style="padding-bottom: 15px;">
+					<div class="col-lg-2 col-md-4 col-xs-4">
+						<a href="annam.html" class="thumbnail"> <img src="logo-annam.png"
+							alt="...">
+						</a>
 					</div>
-					<div class="col-xs-12 col-md-6 col-sm-6">
-						<img src="../annam-web/homepage-slider2.png" alt="Mountain View"
-							class="img-responsive">
+					<div class="col-lg-10 col-md-8 col-xs-8">
+						<p>Food lovers and diet conscious individuals now have a
+							choice to select the food in their daily tiffin. Gone are those
+							days when they had no choice of ordering food of their choice in
+							their area. Annam gets you all of your tiffin service choices in
+							one app. Get connected to your favourite food service.</p>
 					</div>
-
-
+					<div class="col-lg-12 col-md-12 col-xs-12 text-center">
+						<h4>Now available on your android device</h4>
+						<a
+							href="https://play.google.com/store/apps/details?id=mobile.laniam.com.annamsubscriber">
+							<img class="playstore-image" alt="Get it on Google Play"
+							src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+						</a>
+					</div>
+					<br>
 				</div>
 			</div>
 		</div>
 	</div>
-	<footer>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$('.bxslider').bxSlider({
-					pager : false
-				});
-			});
-		</script>
+	<br>
+	<footer class="footer">
+		<div class="container-fluid">
+			<p class="text-center">@2015 hotiff.in - All Rights Reserved.</p>
+		</div>
 	</footer>
 </body>
 </html>
