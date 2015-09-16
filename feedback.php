@@ -82,7 +82,7 @@ if (isset ( $_POST ["submit"] )) {
 				</button>
 				<a class="navbar-brand" rel="home" href="index.html" title="Annam">
 					<img style="max-width: 100px; max-height: 40px; margin-top: -7px;"
-					src="../liquidslider-master/logo-website.png">
+					src="logo-website.png">
 				</a>
 			</div>
 
