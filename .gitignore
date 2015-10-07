@@ -8,9 +8,5 @@
 .springBeans
 .DS_Store
 .sass-cache
-.idea
-
-##############################
--------- Directories -----------
-##############################
 .idea/workspace.xml
+.idea
