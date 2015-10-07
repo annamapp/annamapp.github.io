@@ -1,5 +1,16 @@
+##############################
+-------- IDE Files -----------
+##############################
+.metadata
+.settings
+.project
+.classpath
+.springBeans
 .DS_Store
-node_modules
-src/vendor
-src/index.html
-.bowerrc
+.sass-cache
+.idea
+
+##############################
+-------- Directories -----------
+##############################
+.idea/workspace.xml
