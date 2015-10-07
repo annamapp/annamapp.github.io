@@ -30,8 +30,10 @@ textarea {
  }
 .desktop_only{
   display: none !important;
-  @media(min-width:768px) {
-    display: inherit;
+}
+@media(min-width:768px) {
+  .desktop_only{
+    display: inline-block !important;
   }
 }
 .mobile_only{

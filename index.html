@@ -35,6 +35,8 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
+        <script src="js/jquery.localScroll.min.js"></script>
 
 
         <!-- Custom JavaScript -->
@@ -48,30 +50,18 @@
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
                     <li class="sidebar-brand">
-                        <a href="#">
-                            Start Bootstrap
+                        <a href="#annam_banner">
+                            Home
                         </a>
                     </li>
                     <li>
-                        <a href="#">Dashboard</a>
+                        <a href="#annam_cunsumer">Annam</a>
                     </li>
                     <li>
-                        <a href="#">Shortcuts</a>
+                        <a href="#annam_serviceprovider">Business</a>
                     </li>
                     <li>
-                        <a href="#">Overview</a>
-                    </li>
-                    <li>
-                        <a href="#">Events</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact_us">Feedback</a>
                     </li>
                 </ul>
             </div>
@@ -89,16 +79,16 @@
                         <img src="img/logo-website.png" class="annam_logo"></img>
                     </div>
                     <nav class="annam_nav">
-                        <a class="telphone desktop_only"><i class="fa fa-phone"></i>+91-9004452418</a>
-                        <a href="" class="active desktop_only">Home</a>
-                        <a href="" class="desktop_only">Annam</a>
-                        <a href="" class="desktop_only">Business</a>
-                        <a href="" class="desktop_only">Feedback</a>
+                        <a class="telphone"><i class="fa fa-phone"></i>+91-9004452418</a>
+                        <a href="#annam_banner" class="active desktop_only">Home</a>
+                        <a href="#annam_cunsumer" class="desktop_only">Annam</a>
+                        <a href="#annam_serviceprovider" class="desktop_only">Business</a>
+                        <a href="#contact_us" class="desktop_only">Feedback</a>
                     </nav>
                 </header>
 
                 <!--Top Banner section-->
-                <section class="annam_banner">
+                <section class="annam_banner" id="annam_banner">
                     <div id="owl-demo" class="owl-carousel owl-theme">
                         <div class="item">
                             <img src="img/banner/banner_01.jpg">
@@ -130,7 +120,7 @@
                                 <div class="top">AVAILABLE ON THE</div>
                                 <div class="bottom">App Store</div>
                             </a>
-                            <a href="" class="google_play">
+                            <a href="https://play.google.com/store/apps/details?id=annamprovider.mobile.laniam.com.annamforbusiness" target="_blank" class="google_play">
                                 <div class="icon">
                                     <i class="fa fa-play"></i>
                                 </div>
@@ -141,7 +131,7 @@
                     </div>
                 </section>
                 <!--Category section-->
-                <div class="category_section">
+                <div class="category_section" id="category_section">
                     <div class="customers">
                         <img src="img/customer.png">
                         <h3>Annam for Consumer</h3>
@@ -159,7 +149,7 @@
                 </div>
 
                 <!--Annum for Customer-->
-                <section class="annam_for_cunsumer">
+                <section class="annam_for_cunsumer" id="annam_cunsumer">
                     <div class="overlay"></div>
                     <div class="wrapper">
                         <div class="title">
@@ -198,7 +188,7 @@
                 </section>
 
                 <!--Annum for Service Provider-->
-                <section class="annam_for_serviceprovider">
+                <section class="annam_for_serviceprovider" id="annam_serviceprovider">
                     <div class="title">
                         Annam for Service Provider
                     </div>
@@ -235,7 +225,7 @@
                 <!--src="https://maps.google.com/maps?q=19.179129163116,72.83624477684498&hl=es;z=14&amp;output=embed"></iframe>-->
                 <!--</section>-->
 
-                <section class="contact_us">
+                <section class="contact_us" id="contact_us">
                     <h1 class="title">Contact Us</h1>
                     <p class="subtitle">Have a question not listed above? Want to get started? Please complete the contact form below or see full contact information.</p>
                     <div class="col_1">

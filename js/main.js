@@ -12,6 +12,9 @@ $(document).ready(function() {
         autoPlay:true
     });
 
+    $('.annam_nav').localScroll(800);
+    $('#sidebar-wrapper').localScroll(800);
+
     $('input,textarea').blur(function() {
         var $this = $(this);
         if ($this.val())

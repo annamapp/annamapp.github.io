@@ -24,18 +24,28 @@ section.annam_banner{
     color: #ddd;
     height: 100%;
     z-index: 1;
+    @media only screen and (max-width: 768px)  {
+      top: 20%;
+    }
     .banner_txt{
       .title{
         font-size: 40px;
+        @media only screen and (max-width: 768px)  {
+          font-size: 30px;
+          line-height: 32px;
+        }
       }
       .subtitle{
         font-size: 32px;
+        @media only screen and (max-width: 768px)  {
+          font-size: 20px;
+        }
       }
     }
     .app_store{
       margin: 20px auto 0px auto;
       display: block;
-      width: 440px;
+      width: 100%;
       overflow: auto;
       .apple_store,.google_play{
         width: 200px;
@@ -45,6 +55,14 @@ section.annam_banner{
         padding: 15px;
         color: #ffffff;
         text-decoration: none;
+        margin: 0 auto;
+        display: inline-block;
+        @media only screen and (max-width: 768px)  {
+          display: block;
+          padding: 8px 4px;
+          height: 60px;
+          width: 190px;
+        }
         &:hover{
           background-color: rgba(0,0,0,0.3);
         }
@@ -61,11 +79,11 @@ section.annam_banner{
         }
       }
       .apple_store{
-        float: left;
         margin-right: 40px;
-      }
-      .google_play{
-        float: left;
+        @media only screen and (max-width: 768px)  {
+          margin-bottom: 20px;
+          margin-right: auto;
+        }
       }
     }
   }

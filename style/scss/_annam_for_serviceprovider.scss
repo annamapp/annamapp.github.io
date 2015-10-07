@@ -19,6 +19,10 @@
       width: 49%;
       display: inline-block;
       margin-top: 20px;
+      @media only screen and (max-width: 768px)  {
+        width: 100%;
+        text-align: center;
+      }
       .title{
         font-size: 18px;
       }
@@ -29,8 +33,13 @@
         margin: 15px auto;
         border-radius: 50%;
       }
-      ul li{
-        list-style: none;
+      ul{
+        @media only screen and (max-width: 768px)  {
+          padding-left: 0px;
+        }
+        li{
+          list-style: none;
+        }
       }
     }
   }
