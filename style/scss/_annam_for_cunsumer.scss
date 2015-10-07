@@ -1,0 +1,70 @@
+.annam_for_cunsumer{
+  padding: 50px 30px;
+  overflow: auto;
+  background-image: url("../../img/banner/banner_04.jpg");
+  background-color: #ff9800;
+  background-repeat: no-repeat;
+  clear: both;
+  text-align: center;
+  position: relative;
+  .wrapper{
+    position: relative;
+  }
+  .title{
+    font-size: 40px;
+    color:#ffffff;
+  }
+  .info{
+    margin-top: 10px;
+    font-size: 24px;
+    color: #fff;
+  }
+  .extra_info{
+    color: #ffffff;
+    .part_1{
+      .thumbnail{
+        float: left;
+      }
+    }
+    .part_2{
+      clear: both;
+      padding-top: 80px;
+    }
+    .part_1,.part_2{
+      width: 100%;
+      display: block;
+      margin-top: 20px;
+      text-align: left;
+      .title{
+        font-size: 18px;
+        width: 85%;
+        margin-bottom: 35px;
+      }
+      .thumbnail{
+        width: 40%;
+        height: auto;
+        display: block;
+        margin: 15px;
+      }
+      .description{
+        padding-top: 20px;
+        width: 55%;
+        float: right;
+        h3{
+          margin-top: 0px;
+        }
+        ul li{
+          list-style: none;
+          display: inline-block;
+          margin-right: 40px;
+          i.fa{
+            display: block;
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

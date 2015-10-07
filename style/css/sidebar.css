@@ -1,0 +1,142 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/* Toggle Styles */
+/* line 9, ../scss/sidebar.scss */
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 17, ../scss/sidebar.scss */
+#wrapper.toggled {
+  padding-left: 250px;
+}
+
+/* line 21, ../scss/sidebar.scss */
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 36, ../scss/sidebar.scss */
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+
+/* line 40, ../scss/sidebar.scss */
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+
+/* line 46, ../scss/sidebar.scss */
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+/* Sidebar Styles */
+/* line 53, ../scss/sidebar.scss */
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 62, ../scss/sidebar.scss */
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+/* line 67, ../scss/sidebar.scss */
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+}
+
+/* line 73, ../scss/sidebar.scss */
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* line 79, ../scss/sidebar.scss */
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+/* line 84, ../scss/sidebar.scss */
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+/* line 90, ../scss/sidebar.scss */
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+/* line 94, ../scss/sidebar.scss */
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+@media (min-width: 768px) {
+  /* line 100, ../scss/sidebar.scss */
+  #wrapper {
+    padding-left: 250px;
+  }
+
+  /* line 104, ../scss/sidebar.scss */
+  #wrapper.toggled {
+    padding-left: 0;
+  }
+
+  /* line 108, ../scss/sidebar.scss */
+  #sidebar-wrapper {
+    width: 250px;
+  }
+
+  /* line 112, ../scss/sidebar.scss */
+  #wrapper.toggled #sidebar-wrapper {
+    width: 0;
+  }
+
+  /* line 116, ../scss/sidebar.scss */
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
+
+  /* line 121, ../scss/sidebar.scss */
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+}

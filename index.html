@@ -1,185 +1,289 @@
+<!--
+*****************************************************
+ Project : Annam
+ Author : Sahil Gupta
+ File : index.html
+******************************************************
+-->
+<!DOCTYPE html>
 <html>
-<head>
-<!-- jQuery library (served from Google) -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link
-	href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha256-hMIwZV8FylgKjXnmRI2YY0HLnozYr7Cuo1JvRtzmPWs= sha512-k+wW4K+gHODPy/0gaAMUNmCItIunOZ+PeLW7iZwkDZH/wMaTrSJTt7zK6TGy6p+rnDBghAxdvu1LX2Ohg0ypDw=="
-	crossorigin="anonymous">
+    <head>
+        <!--<Page title-->
+        <title>Annam official website</title>
 
-<link href='https://fonts.googleapis.com/css?family=Roboto'
-	rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Roboto+Mono'
-	rel='stylesheet' type='text/css'>
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="./css/liquid-slider.css">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script
-	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<style>
-.footer {
-	bottom: 0;
-	position:relative;
-	width: 100%;
-	height: 60px;
-	background-color: #f5f5f5;
-}
+        <!--Meta Tag-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-.footer .container-fluid p {
-	margin: 20px 0;
-}
-.container-fluid{
-min-height:calc(100%-124px);
-}
+        <!-- Library styling -->
+        <link rel="stylesheet" href="style/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style/css/owl.carousel.css">
+        <link rel="stylesheet" href="style/css/sidebar.css">
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
 
-.carousel .item {
-    width: 100%; /*slider width*/
-    max-height: calc(100%-64px); /*slider height*/
-}
-.carousel .item img {
-    width: 100%; /*img width*/
-}
-/*add some makeup*/
-.carousel .carousel-control {
-    background: none;
-    border: none;
-    top: 30%;
-    font-size:100px;
-}
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-/*full width container*/
 
-.container-fluid {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left:15px;
-    padding-right:15px;
-}
-.navbar {
-    position: relative;
-    min-height: 64px;
-    margin-bottom: 0px;
-    border: 1px solid transparent;
-}
-</style>
+        <!-- Custom styling -->
+        <link rel="stylesheet" href="style/css/main.css">
 
-<title>Annam</title>
-</head>
-<body>
-	<nav class="navbar navbar-inverse navbar-static-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed"
-					data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-					<span class="sr-only">Toggle navigation</span> <span
-						class="icon-bar"></span> <span class="icon-bar"></span> <span
-						class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" rel="home" href="index.html" title="Annam">
-					<img style="max-width: 100px; max-height: 40px; margin-top: -7px;"
-					src="logo-website.png">
-				</a>
-			</div>
+        <!-- External JavaScript -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
 
-			<div class="collapse navbar-collapse"
-				id="bs-example-navbar-collapse-2">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="annam.html">Annam</a></li>
-					<li><a href="annam-business.html">Annam Business</a></li>
-					<li><a href="feedback.php">Feedback</a>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><span class="fa fa-phone-square fa-lg"></span>
-							+91 9004452418</a></li>
-					<li><a href="https://www.facebook.com/hotiffin" style="padding-top:25.5px"><span
-							class="fa fa-facebook-square fa-lg"></span></a></li>
-					<li><a href="https://twitter.com/hotiffin" style="padding-top:25.5px"><span
-							class="fa fa-twitter-square fa-lg"></span></a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-<header>
-    <div id="myCarousel" class="carousel slide" data-interval="3000">
-        <div class="carousel-inner">
-            <div class="active item">
-                <img src="Banner-1.png" alt="Slide1" />
+
+        <!-- Custom JavaScript -->
+        <script src="js/main.js"></script>
+        <!-- Menu Toggle Script -->
+    </head>
+    <body>
+        <div id="wrapper"  class="toggled">
+
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            Start Bootstrap
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#">Shortcuts</a>
+                    </li>
+                    <li>
+                        <a href="#">Overview</a>
+                    </li>
+                    <li>
+                        <a href="#">Events</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class="item">
-                <img src="Banner-2.png" alt="Slide2" />
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+
+                <!--Header section-->
+                <header>
+                    <a href="#menu-toggle" class="left_nav_icon_wrapper" id="menu-toggle">
+                        <span class="glyphicon glyphicon-menu-hamburger left_nav_icon"></span>
+                    </a>
+                    <div class="logo_wrapper">
+                        <img src="img/logo-website.png" class="annam_logo"></img>
+                    </div>
+                    <nav class="annam_nav">
+                        <a class="telphone"><i class="fa fa-phone"></i>+91-9004452418</a>
+                        <a href="" class="active">Home</a>
+                        <a href="">Annam</a>
+                        <a href="">Business</a>
+                        <a href="">Feedback</a>
+                    </nav>
+                </header>
+
+                <!--Top Banner section-->
+                <section class="annam_banner">
+                    <div id="owl-demo" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="img/banner/banner_01.jpg">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="item">
+                            <img src="img/banner/banner_03.jpg">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="item">
+                            <img src="img/banner/banner_04.jpg">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="banner_txt_wrapper">
+                        <div class="banner_txt">
+                            <div class="title">
+                                Get the world class food service at your doorstep
+                            </div>
+                            <div class="subtitle">
+                                Register with us to enjoy the benefits.
+                            </div>
+                        </div>
+                        <div class="app_store">
+                            <a href="" class="apple_store">
+                                <div class="icon">
+                                    <i class="fa fa-apple"></i>
+                                </div>
+                                <div class="top">AVAILABLE ON THE</div>
+                                <div class="bottom">App Store</div>
+                            </a>
+                            <a href="" class="google_play">
+                                <div class="icon">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                                <div class="top">GET IT ON</div>
+                                <div class="bottom">Google Play</div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!--Category section-->
+                <div class="category_section">
+                    <div class="customers">
+                        <img src="img/customer.png">
+                        <h3>Annam for Consumer</h3>
+                        <div class="desc">
+                            Food lovers and diet conscious individuals now have a choice to select the food in their daily tiffin. Gone are those days when they had no choice of ordering food of their choice in their area. Annam gets you all of your tiffin service choices in one app. Get connected to your favourite food service.
+                        </div>
+                    </div>
+                    <div class="service_provider">
+                        <img src="img/service_provider.png">
+                        <h3>Annam for Service Provider</h3>
+                        <div class="desc">
+                            Tiffin service provider community is growing now a days. They are coming up with their specialized services in terms of healthy food, specific couisine food and many more. Annan is available for all of them. Annam is a place where tiffin providers can create profile, publish daily menu notifications and set the location.
+                        </div>
+                    </div>
+                </div>
+
+                <!--Annum for Customer-->
+                <section class="annam_for_cunsumer">
+                    <div class="overlay"></div>
+                    <div class="wrapper">
+                        <div class="title">
+                            Annam for Consumers
+                        </div>
+                        <div class="info">
+                            Search for food service of your choice,Subscribe the tiffin provider, Recommend your favourite provider.
+                        </div>
+                        <div class="extra_info">
+                            <div class="part_1">
+                                <img  class="thumbnail" src="img/annamconsumer.png">
+                                <div class="description">
+                                    <h3>Annam Subscribers</h3>
+                                    <p class="title">Are you facing difficulty in searching tiffin provider in your area? Register on annam to locate the food providers.</p>
+                                    <ul>
+                                        <li><i class="fa fa-map-marker"></i>Search by location</li>
+                                        <li><i class="fa fa-cogs"></i>View food services</li>
+                                        <li><i class="fa fa-chain-broken"></i>Subscribe the food provider of your choice</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="part_2">
+                                <img class="thumbnail f_right" src="img/annamprovider.jpg">
+                                <div class="description f_left">
+                                    <h3>Find Service Provider</h3>
+                                    <p class="title">Are you facing difficulty in searching tiffin provider in your area? Register on annam to locate the food providers.</p>
+                                    <ul>
+                                        <li><i class="fa fa-bell-o"></i>Get notifications of menu</li>
+                                        <li><i class="fa fa-mobile"></i>Call and order for service</li>
+                                        <li><i class="fa fa-star-o"></i>Give ratings and feedback</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Annum for Service Provider-->
+                <section class="annam_for_serviceprovider">
+                    <div class="title">
+                        Annam for Service Provider
+                    </div>
+                    <div class="info">
+                        Make your Profile visible to your customers, Create your online presence & get recommendation for your service.
+                    </div>
+                    <div class="extra_info">
+                        <div class="part_1">
+                            <img  class="thumbnail" src="img/annamconsumer.png">
+                            <p class="title">All you professional food providers, register on annam with one step. Start using the app</p>
+                            <ul>
+                                <li>Add your food items and publish your menu.</li>
+                                <li>Add the price range of your dishes.</li>
+                                <li>Set your location.</li>
+                                <li>You are done.</li>
+                            </ul>
+                        </div>
+                        <div class="part_2">
+                            <img class="thumbnail" src="img/annamprovider.jpg">
+                            <p class="title">Create your profile attractive..</p>
+                            <ul>
+                                <li>Add pictures of your dishes</li>
+                                <li>Set availability of the food items</li>
+                                <li>Change your location using map</li>
+                                <li>Set price range for weekly/monthly services</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!--<section class="map">-->
+                <!--<iframe class="map" width="100%" height="400" frameborder="0"-->
+                <!--scrolling="no" marginheight="0" marginwidth="0"-->
+                <!--src="https://maps.google.com/maps?q=19.179129163116,72.83624477684498&hl=es;z=14&amp;output=embed"></iframe>-->
+                <!--</section>-->
+
+                <section class="contact_us">
+                    <h1 class="title">Contact Us</h1>
+                    <p class="subtitle">Have a question not listed above? Want to get started? Please complete the contact form below or see full contact information.</p>
+                    <div class="col_1">
+                        <!--<iframe class="map" width="100%" height="400" frameborder="0"-->
+                        <!--scrolling="no" marginheight="0" marginwidth="0"-->
+                        <!--src="https://maps.google.com/maps?q=19.179129163116,72.83624477684498&hl=es;z=14&amp;output=embed"></iframe>-->
+                        <h3>Talk to Us</h3>
+                        <div class="">
+                            <i class="fa fa-map-marker"></i>
+                            22(U), Ground floor, Evershine Mall, Link Road, Mindspace, Malad West, Mumbai, Maharashtra 400064, India.
+                        </div>
+                        <div class="">
+                            <i class="fa fa-mobile"></i>
+                            +91 9004452418
+                        </div>
+                    </div>
+                    <div class="col_2">
+                        <div id="matdes_form">
+                            <form>
+                                <div class="group">
+                                    <input type="text"><span class="highlight"></span><span class="bar"></span>
+                                    <label>Name</label>
+                                </div>
+                                <div class="group">
+                                    <input type="email"><span class="highlight"></span><span class="bar"></span>
+                                    <label>Email</label>
+                                </div>
+                                <div class="group">
+                                    <textarea class="form-control" rows="3" id="comment"></textarea>
+                                    <span class="highlight"></span><span class="bar"></span>
+                                    <label>Message</label>
+                                </div>
+                                <button type="button" class="button buttonBlue">Send Feedback
+                                    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="footer">
+                    <p class="text-center">@2015 hotiff.in - All Rights Reserved.</p>
+                </section>
             </div>
-           
-        </div>
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+            <!-- /#page-content-wrapper -->
+
     </div>
-</header>
-	<br>
-	<div class="container-fluid">
+    <!-- /#wrapper -->
 
-		<div class="row">
-			<div class="col-lg-6 col-md-12 col-xs-12">
-				<div class="row" style="padding-bottom: 15px;">
-					<div class="col-lg-2 col-md-4 col-xs-4">
-						<a href="annam-business.html" class="thumbnail"> <img
-							src="annamlogo-provider.png" alt="...">
-						</a>
-					</div>
-					<div class="col-lg-10 col-md-8 col-xs-8">
-						<p>Tiffin service provider community is growing now a days.
-							They are coming up with their specialized services in terms of
-							healthy food, specific couisine food and many more. Annan is
-							available for all of them. Annam is a place where tiffin
-							providers can create profile, publish daily menu notifications
-							and set the location.</p>
-					</div>
-					<div class="col-lg-12 col-md-12 col-xs-12 text-center">
-						<h4>Now available on your android device</h4>
-						<a
-							href="https://play.google.com/store/apps/details?id=annamprovider.mobile.laniam.com.annamforbusiness">
-							<img class="playstore-image" alt="Get it on Google Play"
-							src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 col-md-12 col-xs-12">
-				<div class="row" style="padding-bottom: 15px;">
-					<div class="col-lg-2 col-md-4 col-xs-4">
-						<a href="annam.html" class="thumbnail"> <img src="logo-annam.png"
-							alt="...">
-						</a>
-					</div>
-					<div class="col-lg-10 col-md-8 col-xs-8">
-						<p>Food lovers and diet conscious individuals now have a
-							choice to select the food in their daily tiffin. Gone are those
-							days when they had no choice of ordering food of their choice in
-							their area. Annam gets you all of your tiffin service choices in
-							one app. Get connected to your favourite food service.</p>
-					</div>
-					<div class="col-lg-12 col-md-12 col-xs-12 text-center">
-						<h4>Now available on your android device</h4>
-						<a
-							href="https://play.google.com/store/apps/details?id=mobile.laniam.com.annamsubscriber">
-							<img class="playstore-image" alt="Get it on Google Play"
-							src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
-						</a>
-					</div>
-					<br>
-				</div>
-			</div>
-		</div>
-	</div>
-	<br>
-	<footer class="footer">
-	
-		<div class="container-fluid">
-			<p class="text-center">@2015 hotiff.in - All Rights Reserved.</p>
-		</div>
-	</footer>
-</body>
+    </body>
 </html>

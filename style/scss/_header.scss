@@ -1,0 +1,57 @@
+/******************************************
+ Project : Annam
+ Author : Sahil Gupta
+ File : header.scss partial
+*******************************************/
+
+header{
+  position: fixed;
+  top: 0px;
+  display: block;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.3);
+  padding: 8px 0px;
+  .logo_wrapper{
+    float: left;
+    margin-right: 30px;
+    .annam_logo{
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  nav.annam_nav{
+    float: right;
+    margin-right: 30px;
+    .telphone{
+      padding: 4px 6px 6px 6px;
+      border: 1px solid #ffffff;
+      text-decoration: none;
+      cursor: default;
+      height: auto;
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      i.fa{
+        margin-right: 6px;
+        font-size: 16px;
+        margin-left: 6px;
+        top: 2px;
+        position: relative;
+      }
+    }
+    a{
+      margin-left: 20px;
+      height: 40px;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      padding-top: 10px;
+      color: #fff;
+      &:first-child{
+        margin-left: 0px;
+      }
+    }
+  }
+}
