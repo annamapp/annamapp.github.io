@@ -20,6 +20,19 @@ header{
       height: 40px;
     }
   }
+  @media(min-width:768px) {
+    .left_nav_icon{
+      display: none;
+    }
+  }
+  .left_nav_icon {
+    float: left;
+    font-size: 30px;
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-top: 4px;
+    color: #fff;
+  }
 
   nav.annam_nav{
     float: right;
