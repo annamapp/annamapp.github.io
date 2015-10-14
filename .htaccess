@@ -62,8 +62,8 @@ Options +FollowSymLinks -Multiviews -Indexes
 ############################################################################################
 # Header Expiry
 <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|json|css|webp|swf|html|json)(\.gz)?(\?.*)?$">
-        Header set Expires "Thu, 23 Aug 2222 00:00:00 GMT"
-        Header unset ETag
-        FileETag None
+    ExpiresActive On
+    ExpiresDefault "access plus 1 year"
+    Header append Cache-Control "public"
 </FilesMatch>
 ###########################################################################################
