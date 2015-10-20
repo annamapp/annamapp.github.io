@@ -50,6 +50,23 @@ $(document).ready(function() {
 });
 
 
+(function(d){
+  var iframe = d.getElementById("googlemapcontainer").appendChild(d.createElement('iframe')),
+    doc = iframe.contentWindow.document;
+  iframe.scrolling = "no",iframe.frameborder="0",iframe.marginheight="0",iframe.marginwidth="0";
+
+  // style the iframe with some CSS
+  iframe.style.cssText = "width:100%;height:400px;margin:0px";
+
+  doc.open().write('<body onload="' +
+    'var d = location.href' +
+    '=\'https:\/\/maps.google.com\/maps?q=19.179129163116,72.83624477684498&hl=es;z=14&amp;output=embed\'">');
+
+  doc.close(); //iframe onload event happens
+
+})(document);
+
+
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
