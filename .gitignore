@@ -10,3 +10,5 @@
 .sass-cache
 .idea/workspace.xml
 .idea
+
+node_modules
