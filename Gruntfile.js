@@ -3,6 +3,29 @@ module.exports = function (grunt) {
   // Project configuration.
 
   grunt.initConfig({
+    uglify: {
+      options: {
+        mangle: true
+        //compress : false,
+        //beautify : true
+      },
+      my_target: {
+        options: {
+          footer: ""
+        },
+        files: {
+          "jsmin/single.js" : ["js/**/*.js","!js/main.js"]
+        }
+      },
+      main: {
+        options: {
+          footer: ""
+        },
+        files: {
+          "jsmin/main.js" : ["js/main.js"]
+        }
+      }
+    },
     img: {
       // recursive extension filter with output path
       task2: {
@@ -16,10 +39,10 @@ module.exports = function (grunt) {
     }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-img');
-  //grunt.loadNpmTasks('grunt-prettysass');
 
   // Default task(s).
-  grunt.registerTask('build', ['img']);
+  grunt.registerTask('build', ['uglify','img']);
 
 };
