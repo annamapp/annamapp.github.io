@@ -38,13 +38,30 @@ module.exports = function (grunt) {
         src: ['img-src/banner/*'],
         dest: 'img/banner'
       }
-    }
+    },
+      cssmin: {
+          options: {
+              target:"unicommercechat/dist/style",
+              advanced:true,
+              keepSpecialComments: 0
+          },
+          target: {
+              files: {
+                  'style/css/annam.css': ['style/css/bootstrap.min.css',
+                      'style/css/main.css',
+                      'style/css/owl.carousel.css',
+                      'style/css/owl.carousel.css',
+                      'style/css/font-awesome.min.css']
+              }
+          }
+      }
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-img');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Default task(s).
-  grunt.registerTask('build', ['uglify','img']);
+  grunt.registerTask('build', ['uglify','img','cssmin']);
 
 };
