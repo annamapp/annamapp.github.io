@@ -14,7 +14,9 @@ module.exports = function (grunt) {
           footer: ""
         },
         files: {
-          "jsmin/single.js" : ["js/**/*.js","!js/main.js"]
+          "jsmin/single.js" : [
+            "js/jquery.min.js","js/bootstrap.min.js","js/owl.carousel.min.js",
+            "js/jquery.scrollTo.min.js", "js/jquery.localScroll.min.js"]
         }
       },
       main: {
