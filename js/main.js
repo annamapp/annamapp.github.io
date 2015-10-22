@@ -6,10 +6,10 @@ $(document).ready(function() {
     });
 
     $("#owl-demo").owlCarousel({
-        navigation : true,
-        items : 1,
+        items:1,
         navigation:false,
-        autoPlay:true
+        autoPlay:true,
+        loop:true
     });
 
     $('.annam_nav').localScroll(800);
