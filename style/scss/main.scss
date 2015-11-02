@@ -4,6 +4,9 @@
  File : main.scss
 *******************************************/
 /***** common style ******/
+*{
+  overflow: auto;
+}
 html,body{
   height: 100%;
 }
