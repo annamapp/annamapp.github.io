@@ -16,6 +16,22 @@
 .services_api_container,.services_search_container{
   background-color: #f2f2f2;
 }
+.services_business{
+  .img_container{
+    img{
+      border: 30px solid #f2f2f2;
+      border-radius: 50%;
+    }
+  }
+}
+.services_search{
+  .img_container{
+    img{
+      border: 30px solid #ffffff;
+      border-radius: 50%;
+    }
+  }
+}
 .service_wrapper{
   .services_api,.services_business,.services_search{
     width: 90%;
@@ -35,6 +51,7 @@
         vertical-align: middle;
         width: 250px;
         height: 250px;
+        border-radius: 50%;
       }
     }
     .api_desc{
