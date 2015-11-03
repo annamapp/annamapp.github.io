@@ -5,9 +5,9 @@
 # You can use nvm to install any Node.js (or io.js) version you require.
 # nvm install 4.0
 
-//npm update
+#npm update
 
-//grunt build
+#grunt build
 
 lftp -c "open -u $FTP_USER,$FTP_PASSWORD $FTP_SERVER; set ssl:verify-certificate no; put -O / .htaccess"
 lftp -c "open -u $FTP_USER,$FTP_PASSWORD $FTP_SERVER; set ssl:verify-certificate no; put -O / index.html"
