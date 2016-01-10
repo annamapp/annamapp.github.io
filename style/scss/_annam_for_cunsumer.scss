@@ -1,61 +1,73 @@
 .annam_for_cunsumer{
   padding: 50px 30px;
   overflow: auto;
-  background-image: url("../../img/banner/BG2.png");
-  background-size:100% 100% ;
-  background-color: #ff9800;
-  background-repeat: no-repeat;
   clear: both;
   text-align: center;
   position: relative;
+  @media only screen and (max-width: 768px)  {
+    padding: 30px 10px;
+  }
+  h3.heading{
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 500;
+    color: #e51c24;
+  }
   .wrapper{
     position: relative;
   }
   .title{
     font-size: 40px;
-    color:#ffffff;
+//    color:#005d6f;
   }
   .info{
     margin-top: 10px;
     font-size: 24px;
     color: #fff;
     @media only screen and (max-width: 768px)  {
-      margin-bottom: 50px;
+      margin-bottom: 0px;
+      color: #666;
     }
   }
   .extra_info{
-    color: #ffffff;
-    .part_1{
+    .part_1,.part_3{
       .thumbnail{
         float: left;
         background-color: transparent;
         border: 0px;
       }
     }
-    .part_2{
+    .part_2,.part_3{
       clear: both;
       padding-top: 80px;
       @media only screen and (max-width: 768px)  {
         padding-top: 0px;
       }
     }
-    .part_1,.part_2{
+    .part_1,.part_2,.part_3{
       width: 100%;
       display: block;
       margin-top: 20px;
       text-align: left;
       .title{
-        font-size: 18px;
+        font-size: 20px;
         width: 85%;
-        margin-bottom: 35px;
+        font-weight: 100;
+        margin: 15px 0;
+        text-align: justify;
+        @media only screen and (max-width: 768px)  {
+          width: 100%;
+        }
       }
       .thumbnail{
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
         background-color: transparent;
         border: 0px;
         width: 40%;
         height: auto;
         display: block;
         margin: 15px;
+        padding: 0px;
         @media only screen and (max-width: 768px)  {
           display: none;
         }
@@ -69,7 +81,10 @@
           text-align: center;
         }
         h3{
-          margin-top: 0px;
+          margin-top: 0;
+          font-size: 35px;
+          font-weight: 500;
+          color: #e51c24;
         }
         ul li{
           list-style: none;

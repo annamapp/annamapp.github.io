@@ -1,9 +1,118 @@
 section.footer{
-  text-align: center;
-  background: #f5f5f5;
+  text-align: left;
+  background: #005d6f;
   clear: both;
   overflow: auto;
+  color: #fff;
+  padding: 20px 10%;
+  font-weight: 500;
+  font-size: 16px;
+  @media only screen and (max-width: 768px)  {
+    padding: 30px 10px;
+    text-align: center;
+  }
   p{
-    margin: 20px 0;
+    margin: 5px 0px;
+  }
+  .foo_link{
+    display: block;
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+    padding-top: 30px;
+    @media only screen and (max-width: 768px)  {
+      padding-top: 0px;
+      margin: 0px 0px 0px 0px;
+    }
+    a{
+      text-decoration: underline;
+      padding-left: 15px;
+      vertical-align: middle;
+      color: #ffffff;
+    }
+  }
+  .app_store{
+    margin: 30px 0px 0px 0px;
+    display: block;
+    text-align: center;
+    width: auto;
+    overflow: auto;
+    vertical-align: middle;
+    .apple_store{
+      width: 200px;
+      height: 70px;
+      border: 1px solid #ffffff;
+      border-radius: 8px;
+      padding: 15px;
+      color: #ffffff;
+      text-decoration: none;
+      margin-top: 25px;
+      display: inline-block;
+      &:hover{
+        background-color: rgba(0,0,0,0.3);
+      }
+      .icon{
+        display: block;
+        float: left;
+        i.fa{
+          font-size: 38px;
+        }
+      }
+      .top{
+        font-size: 14px;
+        text-align: right;
+      }
+      .bottom{
+        font-size: 18px;
+        line-height: 15px;
+        text-align: center;
+      }
+    }
+    .fb_page,.linkedin_page,.google_plus_page,.twitter_page{
+      width: 40px;
+      height: 40px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      padding: 9px 0px 0px 11px;
+      color: #fff;
+      text-decoration: none;
+      margin-right: 5px;
+      display: inline-block;
+      .icon{
+        display: block;
+        float: left;
+        i.fa{
+          font-size: 20px;
+        }
+      }
+      &:hover{
+        background-color: rgba(0,0,0,0.3);
+      }
+    }
+  }
+}
+
+section.about_us{
+  text-align: left;
+  background: #31333f;
+  clear: both;
+  overflow: auto;
+  color: #fff;
+  padding: 40px 10%;
+  font-weight: 500;
+  font-size: 16px;
+  @media only screen and (max-width: 768px)  {
+    text-align: center;
+    padding: 30px 10px;
+  }
+  p{
+    margin: 5px 0px;
+    font-size: 16px;
+    @media only screen and (max-width: 768px)  {
+      margin: 15px 0px;
+    }
+  }
+  h1{
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
