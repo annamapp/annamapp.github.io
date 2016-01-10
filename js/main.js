@@ -7,6 +7,7 @@ $(document).ready(function() {
 
     $("#owl-demo").owlCarousel({
         items:1,
+        singleItem : true,
         navigation:false,
         autoPlay:true,
         loop:true
