@@ -12,6 +12,13 @@
     font-size: 35px;
     font-weight: 500;
     color: #e51c24;
+    @media only screen and (min-width: 768px)  {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      color: #333;
+    }
   }
   .wrapper{
     position: relative;
